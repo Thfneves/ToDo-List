@@ -1,5 +1,7 @@
 import React from "react";
 import "../components/status.scss";
+import Lixo from "../components/lixo.svg";
+import Editar from "../components/editar.svg";
 
 const Todo = ({ todo, removeTodo }) => {
   return (
@@ -9,10 +11,13 @@ const Todo = ({ todo, removeTodo }) => {
       </div>
       <div className="desespero">
         <input className="checkbox" type="checkbox"></input>
-        <button className="complete"> Editar</button>
+        <button className="complete">
+          {" "}
+          <img src={Editar} alt="" />
+        </button>
         <button className="remove" onClick={() => removeTodo(todo.id)}>
           {" "}
-          Remover
+          <img src={Lixo} alt="" />
         </button>
       </div>
     </div>

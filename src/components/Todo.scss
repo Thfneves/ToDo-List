@@ -15,18 +15,18 @@ button:hover {
 }
 
 .remove {
-  background-color: #f27f7f;
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: 3s;
-
+  background-color: rgb(39, 40, 41);
   margin-right: 30px;
 }
 .complete {
   opacity: 1;
-  background-color: #5cb85c;
+  background-color: rgb(39, 40, 41);
+  border: none;
 }
 .todo-form {
   background-color: rgba(243, 240, 255, 0.687);

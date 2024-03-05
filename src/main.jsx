@@ -27,11 +27,6 @@ const router = createBrowserRouter([
     path: "/Page4",
     element: <Page4 id={titleMockup} />,
   },
-
-  // {
-  // path: "/",
-  // element: <App/>,
-  //},
 ]);
 
 // @ts-ignore

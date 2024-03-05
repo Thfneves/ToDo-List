@@ -9,6 +9,9 @@ const Todo = ({ todo, removeTodo }) => {
   const handleChange = (event) => {
     setValor(event.target.incvalue);
   };
+  console.log("TODO", todo);
+  console.log(setValor);
+
   return (
     <div className="todo">
       <div className="content">

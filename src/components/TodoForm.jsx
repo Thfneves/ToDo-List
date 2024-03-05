@@ -16,10 +16,11 @@ const TodoForm = ({ addTodo }) => {
     setCategory("");
     setStatus("");
   };
+
   const handleChange = (event) => {
     // atualizacao
-    console.log("chamou"); // att
-    console.log(event.target.value); // att
+    setStatus(event.target.value);
+    console.log(setStatus);
   };
 
   return (
@@ -36,16 +37,16 @@ const TodoForm = ({ addTodo }) => {
           //diretrizes que sao preenchidas com o usuario, o value e o category. apos criar essas funcoes
           // vamos na linha 10 e informamos isso ao console.log, dessa forma as informacoes ficaram no banco de dados da pagina.
         />
-        <select>
-          <option type="text" value="verde" onChange={handleChange}>
-            Verde
+        <select onChange={handleChange}>
+          <option type="text" value="Verde">
+            Verdess
           </option>
 
-          <option type="text" value="Laranha" onChange={handleChange}>
+          <option type="text" value="Laranha">
             Laranja
           </option>
 
-          <option type="text" value="Vermelho" onChange={handleChange}>
+          <option type="text" value="Vermelho">
             Vermelho
           </option>
         </select>

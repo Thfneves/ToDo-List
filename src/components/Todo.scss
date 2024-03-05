@@ -13,7 +13,9 @@ button:hover {
   //aqui fica o scss da lixeira, do status e do editar
   display: flex;
 }
-
+.statuss {
+  background-color: #636fdf;
+}
 .remove {
   padding: 5px 10px;
   border: none;

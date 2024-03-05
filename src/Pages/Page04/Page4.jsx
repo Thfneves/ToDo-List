@@ -25,7 +25,6 @@ function Page4() {
         status,
       },
     ];
-    //acima foi criado meio que um array para identificar os mmockups, abaixo vamos criar um estado dos Todos
     //o newTodos vai atualizar a lista
     setTodos(newTodos);
   };
@@ -37,7 +36,8 @@ function Page4() {
     const filteredTodos = newTodos.filter((todo) =>
       todo.id !== id ? todo : null
     );
-    console.log(teste); // todo.id for diferente do ID informado ele retorna a lista.
+    console.log(teste);
+    // todo.id for diferente do ID informado ele retorna a lista.
     //Caso tenha um todo com ID igual ele volta como nullo
     setTodos(filteredTodos);
     // setTodos usado para atualizar a lista.
@@ -70,8 +70,6 @@ function Page4() {
         <TodoForm addTodo={addTodo} />
       </div>
     </div>
-    //apos criar o array e o newTodos, precisamos declarar essas funcoes em algum lugar, no caso coloquei acima jundo to form
-    //
   );
 }
 

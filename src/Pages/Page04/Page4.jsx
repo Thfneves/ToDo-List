@@ -37,7 +37,7 @@ function Page4() {
     const filteredTodos = newTodos.filter((todo) =>
       todo.id !== id ? todo : null
     );
-    // todo.id for diferente do ID informado ele retorna a lista.
+    console.log(teste); // todo.id for diferente do ID informado ele retorna a lista.
     //Caso tenha um todo com ID igual ele volta como nullo
     setTodos(filteredTodos);
     // setTodos usado para atualizar a lista.

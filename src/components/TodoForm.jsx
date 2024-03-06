@@ -14,7 +14,9 @@ const TodoForm = ({ addTodo }) => {
     addTodo(value, category, status);
     setValue("");
     setCategory("");
-    setStatus("");
+    setStatus(""); //aqui setei status para criar algo. mais funcional, quando enviamos o
+    //o form, aparecer o status de urgencia, prem nao consegui desenvolver para aparecer na linha de cima na pagina.
+    //Vou deixar assim por hora quando tiver um conhecimento mais consolidado irei finalizar.
   };
 
   const handleChange = (event) => {
@@ -37,19 +39,7 @@ const TodoForm = ({ addTodo }) => {
           //diretrizes que sao preenchidas com o usuario, o value e o category. apos criar essas funcoes
           // vamos na linha 10 e informamos isso ao console.log, dessa forma as informacoes ficaram no banco de dados da pagina.
         />
-        <select onChange={handleChange}>
-          <option type="text" value="Verde">
-            Verdess
-          </option>
 
-          <option type="text" value="Laranha">
-            Laranja
-          </option>
-
-          <option type="text" value="Vermelho">
-            Vermelho
-          </option>
-        </select>
         <button className="criar-tarefa" type="submit">
           {" "}
           Incluir

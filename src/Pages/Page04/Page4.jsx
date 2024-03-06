@@ -4,14 +4,7 @@ import { useState } from "react";
 import TodoForm from "../../components/TodoForm";
 
 function Page4() {
-  const [todos, setTodos] = useState([
-    {
-      id: 2,
-      title: "Limpar o carro",
-      description: "Limpar o carro inteiro, de dentro pra fora",
-      completed: false,
-    },
-  ]);
+  const [todos, setTodos] = useState([]);
   // criamos uma funcao, que recebe um texto e uma categoria. na linha 82, e criado um const que AGRUPA TODOS TODO
   //
   const addTodo = (title, category, status) => {
@@ -36,7 +29,6 @@ function Page4() {
     const filteredTodos = newTodos.filter((todo) =>
       todo.id !== id ? todo : null
     );
-    console.log(teste);
     // todo.id for diferente do ID informado ele retorna a lista.
     //Caso tenha um todo com ID igual ele volta como nullo
     setTodos(filteredTodos);
@@ -55,6 +47,10 @@ function Page4() {
         <div className="status">
           {" "}
           <h1> Status</h1>
+        </div>
+        <div className="concluido">
+          {" "}
+          <h1> Concluido</h1>
         </div>
 
         <div className="opcoes">

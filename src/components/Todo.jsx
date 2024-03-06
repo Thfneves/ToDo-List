@@ -10,7 +10,6 @@ const Todo = ({ todo, removeTodo }) => {
     setValor(event.target.incvalue);
   };
   console.log("TODO", todo);
-  console.log(setValor);
 
   return (
     <div className="todo">
@@ -18,12 +17,22 @@ const Todo = ({ todo, removeTodo }) => {
         <p>{todo.title}</p>
       </div>
 
+      <select className="statuus" onChange={handleChange}>
+        <option type="text" value="Verde">
+          Verde
+        </option>
+
+        <option type="text" value="Laranha">
+          Laranja
+        </option>
+
+        <option type="text" value="Vermelho">
+          Vermelho
+        </option>
+      </select>
       <div className="desespero">
         <input className="checkbox" type="checkbox"></input>
-        <button className="complete">
-          {" "}
-          <img src={Editar} alt="" />
-        </button>
+        <button className="complete"> </button>
         <button className="remove" onClick={() => removeTodo(todo.id)}>
           {" "}
           <img src={Lixo} alt="" />
